@@ -1,0 +1,28 @@
+.scene {
+  perspective: 600px;
+  perspective-origin: center;
+  background-color: #000; 
+}
+
+.letter-a {
+  font-size: 200px;
+  font-weight: bold;
+  color: #ff3737;
+  text-shadow: 0 0 10px #ff9900, 0 0 20px #ff3737;
+  text-align: center;
+  height: 0cqh;
+  transform: rotateX(10deg) rotateV(10deg);
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #ff9900 0 0 20px #ff3737;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff9900 0 0 30px #ff3737;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff9900 0 0 20px #ff3737;
+  }
+}
